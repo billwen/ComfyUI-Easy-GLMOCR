@@ -1,0 +1,60 @@
+{
+  "easy downloadDotsOCRAndLoadModel": {
+    "display_name": "DotsOCR Model Loader",
+    "inputs": {
+      "model_id": {
+        "name": "Model ID"
+      },
+      "download_from": {
+        "name": "Download From"
+      },
+      "attention": {
+        "name": "Attention"
+      },
+      "start": {
+        "name": "Start",
+        "tooltip": "Start to load or download models"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": "DotsOCR Model"
+      }
+    }
+  },
+  "easy applyDotsOCR": {
+    "display_name": "Apply DotsOCR",
+    "inputs": {
+      "dots_ocr_model": {
+        "name": "DotsOCR Model"
+      },
+      "image": {
+        "name": "Input Image"
+      },
+      "prompt_template": {
+        "name": "Prompt Template",
+        "tooltip": "Prompt to guide the OCR process"
+      },
+      "unload_model": {
+        "name": "Unload Model",
+        "tooltip": "Unload model from VRAM after inference"
+      },
+      "temperature": {
+        "name": "Temperature"
+      },
+      "seed": {
+        "name": "Seed"
+      },
+      "custom_prompt": {
+        "name": "Custom Prompt",
+        "tooltip": "Custom prompt template (optional, will override template if provided)"
+      }
+    },
+    "outputs": {
+      "0": {
+        "name": "Result",
+        "tooltip": "Output the result"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-easy-dotsocr"
+description = "ComfyUI-Easy-DotsOCR is a custom node for ComfyUI that provides text extraction via the DotsOCR engine."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["transformers>=4.51.3", "qwen_vl_utils"]
+
+[project.urls]
+Repository = "https://github.com/yolain/ComfyUI-Easy-DotsOCR"
+
+[tool.comfy]
+PublisherId = "yolain"
+DisplayName = "ComfyUI-Easy-DotsOCR"
+Icon = ""
