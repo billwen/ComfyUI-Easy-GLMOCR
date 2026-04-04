@@ -79,11 +79,18 @@ This project is developed based on [ComfyUI-Easy-DotsOCR](https://github.com/yol
 
 This project inherits the license from [GLM-OCR](https://github.com/zai-org/GLM-OCR). Please review their license terms before use.
 
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+This project was forked and adapted from [ComfyUI-Easy-DotsOCR](https://github.com/yolain/ComfyUI-Easy-DotsOCR) by [yolain](https://github.com/yolain). The original project provided the ComfyUI node architecture, model loading/downloading pipeline, prompt template system, and image processing utilities that serve as the foundation of this project. We gratefully acknowledge yolain's work in building the original DotsOCR integration for ComfyUI.
+
 ## Acknowledgements
 
-- [GLM-OCR](https://github.com/zai-org/GLM-OCR) by Z.ai for the OCR model
-- [ComfyUI-Easy-DotsOCR](https://github.com/yolain/ComfyUI-Easy-DotsOCR) by yolain for the original node implementation
-- [ComfyUI](https://github.com/comfyanonymous/ComfyUI) for the node workflow framework
+- [ComfyUI-Easy-DotsOCR](https://github.com/yolain/ComfyUI-Easy-DotsOCR) by [yolain](https://github.com/yolain) — Original project providing the node framework, download pipeline, and overall architecture
+- [GLM-OCR](https://github.com/zai-org/GLM-OCR) by [Z.ai](https://github.com/zai-org) — The 0.9B vision-language OCR model powering text, formula, and table recognition
+- [dots.ocr](https://github.com/rednote-hilab/dots.ocr) by [RedNote HILab](https://github.com/rednote-hilab) — The OCR model supported by the original upstream project
+- [ComfyUI](https://github.com/comfyanonymous/ComfyUI) by [comfyanonymous](https://github.com/comfyanonymous) — The node-based workflow framework
 
 ## Contact
 
