@@ -1,14 +1,14 @@
 [project]
-name = "comfyui-easy-dotsocr"
-description = "ComfyUI-Easy-DotsOCR is a custom node for ComfyUI that provides text extraction via the DotsOCR engine."
+name = "comfyui-easy-glmocr"
+description = "ComfyUI-Easy-GLMOCR is a custom node for ComfyUI that provides text extraction via the GLM-OCR engine."
 version = "1.0.0"
 license = {file = "LICENSE"}
-dependencies = ["transformers>=4.51.3", "qwen_vl_utils"]
+dependencies = ["transformers>=4.51.3"]
 
 [project.urls]
-Repository = "https://github.com/yolain/ComfyUI-Easy-DotsOCR"
+Repository = "https://github.com/yolain/ComfyUI-Easy-GLMOCR"
 
 [tool.comfy]
 PublisherId = "yolain"
-DisplayName = "ComfyUI-Easy-DotsOCR"
+DisplayName = "ComfyUI-Easy-GLMOCR"
 Icon = ""

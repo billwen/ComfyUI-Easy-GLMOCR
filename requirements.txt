@@ -1,2 +1,1 @@
-qwen_vl_utils
 transformers>=4.51.3

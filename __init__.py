@@ -1,13 +1,13 @@
 from .nodes import *
 from typing_extensions import override
 
-class DotsOCRExtension(ComfyExtension):
+class GlmOCRExtension(ComfyExtension):
     @override
     async def get_node_list(self) -> list[type[io.ComfyNode]]:
         return [
-            DownloadAndLoadDotsOCRModel,
-            ApplyDotsOCR
+            DownloadAndLoadGlmOCRModel,
+            ApplyGlmOCR
         ]
 
-async def comfy_entrypoint() -> DotsOCRExtension:
-    return DotsOCRExtension()
+async def comfy_entrypoint() -> GlmOCRExtension:
+    return GlmOCRExtension()

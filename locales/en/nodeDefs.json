@@ -1,6 +1,6 @@
 {
-  "easy downloadDotsOCRAndLoadModel": {
-    "display_name": "DotsOCR Model Loader",
+  "easy downloadGlmOCRAndLoadModel": {
+    "display_name": "GLM-OCR Model Loader",
     "inputs": {
       "model_id": {
         "name": "Model ID"
@@ -18,15 +18,15 @@
     },
     "outputs": {
       "0": {
-        "name": "DotsOCR Model"
+        "name": "GLM-OCR Model"
       }
     }
   },
-  "easy applyDotsOCR": {
-    "display_name": "Apply DotsOCR",
+  "easy applyGlmOCR": {
+    "display_name": "Apply GLM-OCR",
     "inputs": {
-      "dots_ocr_model": {
-        "name": "DotsOCR Model"
+      "glm_ocr_model": {
+        "name": "GLM-OCR Model"
       },
       "image": {
         "name": "Input Image"

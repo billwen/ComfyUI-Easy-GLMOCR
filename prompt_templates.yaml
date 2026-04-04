@@ -1,3 +1,15 @@
+prompt_text_recognition:
+  system_prompt: "Text Recognition:"
+
+prompt_formula_recognition:
+  system_prompt: "Formula Recognition:"
+
+prompt_table_recognition:
+  system_prompt: "Table Recognition:"
+
+prompt_ocr:
+  system_prompt: Extract the text content from this image.
+
 prompt_layout_all_en:
   system_prompt: |
     Please output the layout information from the PDF image, including each layout element's bbox, its category, and the corresponding text content within the bbox.
@@ -21,9 +33,6 @@ prompt_layout_all_en:
 prompt_layout_only_en:
   system_prompt: |
     Please output the layout information from this PDF image, including each layout's bbox and its category. The bbox should be in the format [x1, y1, x2, y2]. The layout categories for the PDF document include ['Caption', 'Footnote', 'Formula', 'List-item', 'Page-footer', 'Page-header', 'Picture', 'Section-header', 'Table', 'Text', 'Title']. Do not output the corresponding text. The layout result should be in JSON format.
-
-prompt_ocr:
-  system_prompt: Extract the text content from this image.
 
 prompt_grounding_ocr:
   system_prompt: |

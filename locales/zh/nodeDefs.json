@@ -1,6 +1,6 @@
 {
-  "easy downloadDotsOCRAndLoadModel": {
-    "display_name": "DotsOCR 模型加载器",
+  "easy downloadGlmOCRAndLoadModel": {
+    "display_name": "GLM-OCR 模型加载器",
     "inputs": {
       "model_id": {
         "name": "模型 ID"
@@ -18,15 +18,15 @@
     },
     "outputs": {
       "0": {
-        "name": "DotsOCR 模型"
+        "name": "GLM-OCR 模型"
       }
     }
   },
-  "easy applyDotsOCR": {
-    "display_name": "应用 DotsOCR",
+  "easy applyGlmOCR": {
+    "display_name": "应用 GLM-OCR",
     "inputs": {
-      "dots_ocr_model": {
-        "name": "DotsOCR 模型"
+      "glm_ocr_model": {
+        "name": "GLM-OCR 模型"
       },
       "image": {
         "name": "输入图像"
