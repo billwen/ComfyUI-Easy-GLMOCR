@@ -39,7 +39,7 @@ FlashAttention is very heavy to compile (lots of CUDA kernels) and needs massive
    pip install flash-attn --no-build-isolation
    ```
 
-to add expand swap file
+   to add expand swap file
    ```bash
    sudo fallocate -l 64G /swapfile
    sudo chmod 600 /swapfile
