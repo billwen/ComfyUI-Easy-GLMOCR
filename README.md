@@ -12,6 +12,40 @@ ComfyUI-Easy-GLMOCR is a custom node for [ComfyUI](https://github.com/comfyanony
 - **Auto Download** — Models downloaded automatically from HuggingFace or ModelScope
 
 ## Installation
+-1. Check Python and CUDA version
+   ```bash
+   python --version
+   # Python 3.14.3
+
+   python -c "import torch; print(torch.__version__);print(torch.cuda.is_available())"
+   # 2.11.0+cu130
+   # True
+
+   nvcc -V
+   # nvcc: NVIDIA (R) Cuda compiler driver
+   # Copyright (c) 2005-2026 NVIDIA Corporation
+   # Built on Mon_Mar_02_09:52:23_PM_PST_2026
+   # Cuda compilation tools, release 13.2, V13.2.51
+   # Build cuda_13.2.r13.2/compiler.37434383_0
+   ```
+   * PyTorch's CUDA version maste match the nvcc's CUDA version.
+   * on Ubuntu 24.04, use "sudo update-alternatives --config cuda" select the activated cuda version.
+
+0. Install flash-attn
+FlashAttention is very heavy to compile (lots of CUDA kernels) and needs massive amount of memory.
+   ```bash
+   # on 64GB machine, maximum parallel jobs are 4
+   export MAX_JOBS=4 
+   pip install flash-attn --no-build-isolation
+   ```
+
+to add expand swap file
+   ```bash
+   sudo fallocate -l 64G /swapfile
+   sudo chmod 600 /swapfile
+   sudo mkswap /swapfile
+   sudo swapon /swapfile
+   ```
 
 1. Clone this repository into your ComfyUI `custom_nodes` directory:
    ```bash
